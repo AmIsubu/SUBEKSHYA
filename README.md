@@ -23,7 +23,7 @@
 
 | Platform | URL | Status |
 |----------|-----|--------|
-| 🐙 **GitHub Pages** | `https://yourusername.github.io/subekshya-portfolio` | ✅ Live |
+||🐙**GitHub Pages**|`https://amisubu.github.io/subekshya`|🔄Pending|
 | ⚡ **Vercel** | `https://your-vercel-app.vercel.app` | ✅ Live |
 | 🔥 **Firebase** | `https://your-project.firebaseapp.com` | ✅ Live |
 

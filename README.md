@@ -23,7 +23,7 @@
 
 | Platform | URL | Status |
 |----------|-----|--------|
-||🐙**GitHub Pages**|`https://amisubu.github.io/subekshya`|🔄Pending|
+| 🐙 **GitHub Pages** | `https://amisubu.github.io/subekshya` | ✅ Live |
 | ⚡ **Vercel** | `https://your-vercel-app.vercel.app` | ✅ Live |
 | 🔥 **Firebase** | `https://your-project.firebaseapp.com` | ✅ Live |
 
@@ -128,8 +128,8 @@ subekshya-portfolio/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/subekshya-portfolio.git
-   cd subekshya-portfolio
+   git clone https://github.com/AmIsubu/subekshya.git
+   cd subekshya
    ```
 
 2. **Open in browser**

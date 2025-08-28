@@ -1,0 +1,89 @@
+[debug] [2025-08-28T18:36:12.113Z] ----------------------------------------------------------------------
+[debug] [2025-08-28T18:36:12.119Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-08-28T18:36:12.120Z] CLI Version:   14.15.0
+[debug] [2025-08-28T18:36:12.120Z] Platform:      win32
+[debug] [2025-08-28T18:36:12.120Z] Node Version:  v24.7.0
+[debug] [2025-08-28T18:36:12.121Z] Time:          Fri Aug 29 2025 00:21:12 GMT+0545 (Nepal Time)
+[debug] [2025-08-28T18:36:12.121Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-28T18:36:12.342Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-28T18:36:12.342Z] > authorizing via signed-in user (subekhyashrestha@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Dell\Desktop\subekshya
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-08-28T18:36:34.603Z] Using project from CLI flag: subekshya-portfolio
+[debug] [2025-08-28T18:36:34.605Z] Checked if tokens are valid: true, expires at: 1756409761572
+[debug] [2025-08-28T18:36:34.605Z] Checked if tokens are valid: true, expires at: 1756409761572
+[debug] [2025-08-28T18:36:34.608Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/subekshya-portfolio [none]
+[debug] [2025-08-28T18:36:35.323Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/subekshya-portfolio 403
+[debug] [2025-08-28T18:36:35.324Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/subekshya-portfolio {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-08-28T18:36:35.324Z] Request to https://firebase.googleapis.com/v1beta1/projects/subekshya-portfolio had HTTP Error: 403, The caller does not have permission
+[debug] [2025-08-28T18:36:35.524Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/subekshya-portfolio had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project subekshya-portfolio. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-08-28T18:36:41.984Z] ----------------------------------------------------------------------
+[debug] [2025-08-28T18:36:41.989Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create subekshya-portfolio --display-name \Subekshya Portfolio"
+[debug] [2025-08-28T18:36:41.989Z] CLI Version:   14.15.0
+[debug] [2025-08-28T18:36:41.989Z] Platform:      win32
+[debug] [2025-08-28T18:36:41.990Z] Node Version:  v24.7.0
+[debug] [2025-08-28T18:36:41.990Z] Time:          Fri Aug 29 2025 00:21:41 GMT+0545 (Nepal Time)
+[debug] [2025-08-28T18:36:41.990Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-28T18:36:42.217Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-28T18:36:42.217Z] > authorizing via signed-in user (subekhyashrestha@gmail.com)
+[debug] [2025-08-28T18:36:42.223Z] Checked if tokens are valid: true, expires at: 1756409761572
+[debug] [2025-08-28T18:36:42.224Z] Checked if tokens are valid: true, expires at: 1756409761572
+[debug] [2025-08-28T18:36:42.225Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-08-28T18:36:42.225Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"subekshya-portfolio","name":"\\Subekshya Portfolio\""}
+[debug] [2025-08-28T18:36:43.862Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-08-28T18:36:43.862Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [display_name] has issue [project display name contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-08-28T18:36:44.427Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [display_name] has issue [project display name contains invalid characters]
+    at responseToError (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2025-08-28T18:36:51.651Z] ----------------------------------------------------------------------
+[debug] [2025-08-28T18:36:51.654Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create subekshya-portfolio-2025 --display-name \Subekshya Portfolio 2025"
+[debug] [2025-08-28T18:36:51.655Z] CLI Version:   14.15.0
+[debug] [2025-08-28T18:36:51.655Z] Platform:      win32
+[debug] [2025-08-28T18:36:51.655Z] Node Version:  v24.7.0
+[debug] [2025-08-28T18:36:51.655Z] Time:          Fri Aug 29 2025 00:21:51 GMT+0545 (Nepal Time)
+[debug] [2025-08-28T18:36:51.655Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-28T18:36:51.886Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-28T18:36:51.886Z] > authorizing via signed-in user (subekhyashrestha@gmail.com)
+[debug] [2025-08-28T18:36:51.891Z] Checked if tokens are valid: true, expires at: 1756409761572
+[debug] [2025-08-28T18:36:51.891Z] Checked if tokens are valid: true, expires at: 1756409761572
+[debug] [2025-08-28T18:36:51.893Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-08-28T18:36:51.893Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"subekshya-portfolio-2025","name":"\\Subekshya Portfolio 2025\""}
+[debug] [2025-08-28T18:36:53.493Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-08-28T18:36:53.494Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [display_name] has issue [project display name contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-08-28T18:36:53.716Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [display_name] has issue [project display name contains invalid characters]
+    at responseToError (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
